@@ -1,0 +1,22 @@
+<div class="app-ligne-map">
+
+    <sebm-google-map  [latitude]="latCenter" [longitude]="lngCenter" [zoom]="zoom">
+             
+             <sebm-google-map-polyline [strokeColor]="strokeColor" [strokeWeight]="strokeWeight" [strokeOpacity]="strokeOpacity">
+                <ul>
+                    <li *ngFor="let station of stations">
+                        <sebm-google-map-polyline-point [latitude]="station.lat" [longitude]="station.lng" >
+                        </sebm-google-map-polyline-point>
+
+                        <sebm-google-map-marker [iconUrl]="iconBus" [latitude]="station.lat" [longitude]="station.lng">
+                            <sebm-google-map-info-window [disableAutoPan]="true">
+                                <div id="arretBus">Station : {{station.name}}</div>
+                            </sebm-google-map-info-window>
+                        </sebm-google-map-marker>
+                    </li>
+                </ul>
+             </sebm-google-map-polyline>
+
+    </sebm-google-map>
+
+</div>

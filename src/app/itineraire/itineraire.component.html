@@ -1,0 +1,14 @@
+<div class="container-fluid bg-1 text-center">
+<div id="app-itineraire">
+  <h2> Itinéraire  {{type}}  {{line}}</h2>
+  <h3 *ngIf="!stations" class="info">Cet itinéraire n'existe pas</h3>
+  <div id="listeStation" *ngIf="stations" >
+    <ul class="itineraire">
+      <li *ngFor="let station of stations">
+        <span class="badge">STATION</span>    {{ station }}
+      </li>
+    </ul>
+ 
+  </div>
+</div>
+</div>

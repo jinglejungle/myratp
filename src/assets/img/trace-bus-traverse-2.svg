@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="trace-bus-traverse-2.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.44"
+     inkscape:cx="400"
+     inkscape:cy="560"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="823"
+     inkscape:window-height="820"
+     inkscape:window-x="50"
+     inkscape:window-y="50"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 88.394885,57.071021 c 0,0 4.810607,-9.62121 9.621213,-5.41193 4.810602,4.20928 17.438442,17.438446 17.438442,17.438446 l 20.44508,36.680873 c 0,0 1.18116,5.34956 -11.42519,12.62784 -12.73281,7.35129 -25.255681,14.43182 -25.255681,14.43182 0,0 -4.810607,3.60795 0,9.62121 4.810611,6.01326 14.431821,22.24904 14.431821,22.24904 l 20.44508,3.60796 14.43181,1.80398 c 0,0 5.41193,-2.4053 5.41193,22.24906 v 57.12594 l -7.81723,3.00663 c -25.34707,0 -75.165721,0 -75.165721,0 L 49.910036,220.0303 131.08902,140.6553 c 0,0 8.41855,-6.01326 1.80397,-12.62784 -6.61458,-6.61458 -8.41856,-9.62121 -8.41856,-9.62121"
+       id="path21"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csccscscscscccccsc" />
+  </g>
+</svg>

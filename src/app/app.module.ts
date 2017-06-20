@@ -1,20 +1,50 @@
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import {SelectModule} from 'ng2-select';
+import { AgmCoreModule } from 'angular2-google-maps/core';
 
+/*import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations.d';*/
+
+import { ApiBusService } from 'app/apiRatp.service';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { ContentComponent } from './content/content.component';
+import { LigneComponent } from './ligne/ligne.component';
+import { RechercheComponent } from './ligne/recherche/recherche.component';
+import { LigneMapComponent } from './ligne/ligne-map/ligne-map.component';
+import { LigneHorairesComponent } from './ligne/ligne-horaires/ligne-horaires.component';
+import { ItineraireComponent } from './itineraire/itineraire.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    ContentComponent,
+    LigneComponent,
+    RechercheComponent,
+    LigneMapComponent,
+    LigneHorairesComponent,
+    ItineraireComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule,
+    SelectModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBA78Ji7rLOc2othaLzbmoJiOREf_r0sQg'
+    }), // JS apikey
+    /*BrowserAnimationsModule,
+    NoopAnimationsModule*/
   ],
-  providers: [],
+  providers: [ApiBusService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,10 @@
-<div>
-
-  <app-recherche (eventSearch)="onSearch($event)" ></app-recherche>
+<div class="container-fluid bg-1 text-center">
   <app-ligne-map></app-ligne-map>
-  <app-ligne-horaires [horaires]="horaires"></app-ligne-horaires>
+</div>
+
+<div class="container-fluid text-center">
+    <div id="app-line-content">
+      <app-recherche (eventSearch)="onSearch($event)"></app-recherche>
+        <app-ligne-horaires [horaires]="horaires" [line]="line"></app-ligne-horaires>
+    </div>
 </div>

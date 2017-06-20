@@ -1,0 +1,17 @@
+.apiText {
+  width: 650px;
+  margin: 10px auto;
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+.lettrine {
+  font-size: 30px;
+}
+.copyrights {
+  margin-top: 30px;
+}
+
+@media(max-width: 768px) {
+  .apiText { width: 100%; padding: 0 20px;}
+}

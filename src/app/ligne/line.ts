@@ -1,4 +1,8 @@
 export class Line {
-  stationStart: string ;
-  stationEnd:   string ;
+  numLine: string;
+  typeLine: string;
+  station: string;
+  direction: string;
+  sens: string;
+  slug: string;
 }

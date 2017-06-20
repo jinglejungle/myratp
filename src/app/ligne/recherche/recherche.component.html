@@ -1,6 +1,23 @@
-<div class='app-recherche'>
-  recherche
-  <input value="station 1" [(ngModel)]="line.stationStart" /> {{line.stationStart}}
-  <input value="station 2" [(ngModel)]="line.stationEnd" /> {{line.stationEnd}}
-  <button (click)="search()">rechercher</button>
+<!-- First Container -->
+<div class="app-recherche">
+  <div  class="alert alert-info" > Sélectionnez  une station et une direction </div>
+  <div class="select">
+    <label class="txt-select">Station de départ : </label>
+    <ng-select [allowClear]="true"
+               [items]="stations"
+               (data)="refreshValueStart($event)"
+               placeholder="Choisissez votre station de départ"  >
+    </ng-select>
+  </div>
+
+  <div class="select">
+    <label class="txt-select">Choisissez une direction : </label>
+    <ng-select  [allowClear]="true"
+                [items]="directions"
+                (data)="refreshValueEnd($event)"
+                placeholder="Choisissez la direction"   >
+    </ng-select>
+  </div>
+
+  <button id="btn-rech" class="btn btn-primary" (click)="search()">Afficher l'horaire du bus </button>
 </div>

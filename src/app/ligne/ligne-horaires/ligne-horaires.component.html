@@ -1,6 +1,32 @@
-<div class="app-ligne-horaires">
-  Affiche les horaires de la ligne
-  {{horaires}}
+
+<div *ngIf="horaires" class="app-ligne-horaires"> <!--[@fadeInOut]-->
+
+  <div id="affTime" >
+
+   <div id="nomStation" class="table">{{line?.station}}</div>
+     <div  class="table-responsive" >
+        <table id="tabHoraires" class="table" >
+          <tr class="ligne1 titresHoraires">
+            <th>Ligne</th>
+            <th>Temps d'attente</th>
+            <th>Destination</th>
+          </tr>
+
+          <tr class="ligne2" *ngFor="let horaire of horaires" >
+            <td class="colonne1">
+                <div id="logoBus">{{line.numLine}}</div>
+            </td>
+
+            <td class="colonne2">
+              <div id="attente">{{horaire.message}}</div>
+            </td>
+            <td class="colonne3">
+              <div id="direction">{{horaire.destination}}</div>
+            </td>
+          </tr>
+
+        </table>
+     </div>
+
 </div>
-
-
+</div>
