@@ -18,6 +18,7 @@ import { RechercheComponent } from './ligne/recherche/recherche.component';
 import { LigneMapComponent } from './ligne/ligne-map/ligne-map.component';
 import { LigneHorairesComponent } from './ligne/ligne-horaires/ligne-horaires.component';
 import { ItineraireComponent } from './itineraire/itineraire.component';
+import { TraficComponent } from './ligne/trafic/trafic.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ItineraireComponent } from './itineraire/itineraire.component';
     RechercheComponent,
     LigneMapComponent,
     LigneHorairesComponent,
-    ItineraireComponent
+    ItineraireComponent,
+    TraficComponent
   ],
   imports: [
     BrowserModule,
