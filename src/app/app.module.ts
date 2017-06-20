@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import {SelectModule} from 'ng2-select';
+import { SelectModule } from 'ng2-select';
 import { AgmCoreModule } from 'angular2-google-maps/core';
 
 /*import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations.d';*/
@@ -19,6 +19,7 @@ import { LigneMapComponent } from './ligne/ligne-map/ligne-map.component';
 import { LigneHorairesComponent } from './ligne/ligne-horaires/ligne-horaires.component';
 import { ItineraireComponent } from './itineraire/itineraire.component';
 import { TraficComponent } from './ligne/trafic/trafic.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { TraficComponent } from './ligne/trafic/trafic.component';
     LigneMapComponent,
     LigneHorairesComponent,
     ItineraireComponent,
-    TraficComponent
+    TraficComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,
