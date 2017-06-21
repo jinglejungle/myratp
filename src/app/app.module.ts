@@ -37,7 +37,7 @@ import { FormItiComponent } from './form-iti/form-iti.component';
     TraficComponent,
     AccueilComponent,
     FormItiComponent
- ],
+],
   imports: [
     BrowserModule,
     FormsModule,
