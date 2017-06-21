@@ -1,0 +1,121 @@
+h2{
+    text-align: center;
+}
+
+
+.panel-body{
+ width:28%;
+ float: left; 
+ background-color: #2f4c99; 
+}
+.form-control {
+    display: inline-block;
+    width: 86%;
+    margin-left: auto;
+    font-size: 20px;
+    margin-right: auto;
+    background-color: #4469c9;
+    border: solid 1px #4469c9;
+    color:#9aade2;
+    
+}
+#depart{
+    background-color: #4469c9;
+    width: 41px;
+    color: #9aade2;
+    font-size: 17px;
+    border-radius: 10px 0px 0px 10px;
+    height: 35px;
+    text-align: center;
+    border: solid 1px #4469c9;
+}
+
+#arrive{
+    background-color: #4469c9;
+    width: 41px;
+    color: #9aade2;
+    font-size: 17px;
+    border-radius: 5px;
+    height: 35px;
+    text-align: center;
+}
+#aller{
+   width: 48%;
+    background-color: #fff;
+    border-radius: 8px 0px 0px 8px;
+    color: #9aade2;
+    border: solid 1px;
+    font-weight: normal;
+    text-align: center;
+    float:left;
+}
+#retour{
+   width: 48%;
+    background-color: #2f4c99;
+    border-radius: 0px 8px 8px 0px;
+    color: #9aade2;
+    font-weight: normal;
+    text-align: center;
+    border: solid 1px;
+     float:left;
+}
+#date{
+    width:50%;
+    height: 35px;
+    background-color:#2f4c99; 
+    color:#fff;
+    font-size: 16px;
+    border-radius: 5px;
+    border:solid 1px #4469c9;
+
+} 
+#heure{
+    width:15%;
+     height: 35px;
+    background-color:#2f4c99;
+    color:#fff;
+    font-size: 20px;
+    border-radius: 5px;
+    border:solid 1px #4469c9;
+ } 
+ #minutes{
+    width:15%;
+     height: 35px;
+    background-color:#2f4c99;
+    color:#fff;
+    font-size: 20px;
+    border-radius: 5px;
+    border:solid 1px #4469c9;
+    
+ }
+ #handi{
+     width:5%;
+     height:15px;
+     background-color: #eee;
+} 
+#iti{
+    float: right;
+    margin-right: 128px;
+    margin-top: 3px
+} 
+#submit{
+    display: table;
+    width:80%;
+    height:60px;
+    margin-left:  auto;
+    margin-right:  auto;
+    font-size-adjust: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+} 
+#reset{
+    width:80%;
+    height: 30px;
+    display: table;
+    background-color: #2f4c99;
+    font-size: 14px;
+    border:none;
+    margin-left: auto;
+    margin-right: auto; 
+    
+}          
