@@ -1,7 +1,7 @@
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { SelectModule } from 'ng2-select';
 import { AgmCoreModule } from 'angular2-google-maps/core';
@@ -20,6 +20,7 @@ import { LigneHorairesComponent } from './ligne/ligne-horaires/ligne-horaires.co
 import { ItineraireComponent } from './itineraire/itineraire.component';
 import { TraficComponent } from './ligne/trafic/trafic.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { FormItiComponent } from './form-iti/form-iti.component';
 
 
 @NgModule({
@@ -34,11 +35,13 @@ import { AccueilComponent } from './accueil/accueil.component';
     LigneHorairesComponent,
     ItineraireComponent,
     TraficComponent,
-    AccueilComponent
-  ],
+    AccueilComponent,
+    FormItiComponent
+],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     AppRoutingModule,
     SelectModule,
