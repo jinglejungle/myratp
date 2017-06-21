@@ -6,6 +6,7 @@ import { ItineraireComponent } from './itineraire/itineraire.component'
 import { ContentComponent } from './content/content.component';
 import { TraficComponent } from './ligne/trafic/trafic.component';
 
+
 const routes: Routes = [
   { path: 'itineraire/:type/:line', component:ItineraireComponent  },
   { path: 'horaires/:type/:line', component:LigneComponent  },

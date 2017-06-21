@@ -21,6 +21,8 @@ import { ItineraireComponent } from './itineraire/itineraire.component';
 import { TraficComponent } from './ligne/trafic/trafic.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { FormItiComponent } from './form-iti/form-iti.component';
+import { AlertModule} from 'ngx-bootstrap';
+import { DatepickerModule } from 'ngx-bootstrap' ;
 
 
 @NgModule({
@@ -36,13 +38,16 @@ import { FormItiComponent } from './form-iti/form-iti.component';
     ItineraireComponent,
     TraficComponent,
     AccueilComponent,
-    FormItiComponent
-],
+    FormItiComponent],
+  
   imports: [
+    DatepickerModule.forRoot(),
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
+    AlertModule.forRoot(),
+    
     AppRoutingModule,
     SelectModule,
     AgmCoreModule.forRoot({
