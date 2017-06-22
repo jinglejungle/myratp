@@ -1,16 +1,22 @@
+.clear{
+    clear: both;
+}
 h2{
     text-align: center;
+    color:#fff;
 }
 
 
 .panel-body{
- width:28%;
+ width:16em;
+ background-color: #2f4c99;
+ margin-left:16px;
  float: left; 
- background-color: #2f4c99; 
+  
 }
 .form-control {
-    display: inline-block;
-    width: 86%;
+    
+    
     margin-left: auto;
     font-size: 20px;
     margin-right: auto;
@@ -28,6 +34,16 @@ h2{
     height: 35px;
     text-align: center;
     border: solid 1px #4469c9;
+    float:left;
+
+}
+#depart2{
+    border-radius: 0px 10px 10px 0px;
+    width: 83%;
+    border: solid 2px 0px 0px 0px black;
+    padding-top: 1px;
+    height: 35px;
+    float:left;
 }
 
 #arrive{
@@ -35,26 +51,43 @@ h2{
     width: 41px;
     color: #9aade2;
     font-size: 17px;
-    border-radius: 5px;
+    border-radius: 10px 0px 0px 10px;
     height: 35px;
+    margin-top: 3px;
     text-align: center;
+    float: left;
 }
+#arrive2{
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 3px;
+    width:83%;
+    border: solid 2px 0px 0px 0px black;
+    padding-top: 1px;
+    height: 35px;
+    float:left;
+}
+
+
 #aller{
    width: 48%;
+   height:41px;
     background-color: #fff;
     border-radius: 8px 0px 0px 8px;
     color: #9aade2;
     border: solid 1px;
+    margin-top: 3px;
     font-weight: normal;
     text-align: center;
     float:left;
 }
 #retour{
    width: 48%;
+   height:41px;
     background-color: #2f4c99;
     border-radius: 0px 8px 8px 0px;
     color: #9aade2;
     font-weight: normal;
+    margin-top: 3px;
     text-align: center;
     border: solid 1px;
      float:left;
@@ -64,9 +97,11 @@ h2{
     height: 35px;
     background-color:#2f4c99; 
     color:#fff;
-    font-size: 16px;
+    margin-top: 3px;
+    font-size: 12px;
     border-radius: 5px;
     border:solid 1px #4469c9;
+    display: inline-block;
 
 } 
 #heure{
@@ -74,16 +109,17 @@ h2{
      height: 35px;
     background-color:#2f4c99;
     color:#fff;
-    font-size: 20px;
+    font-size: 12px;
+    margin-top: 3px;
     border-radius: 5px;
     border:solid 1px #4469c9;
  } 
  #minutes{
     width:15%;
-     height: 35px;
+    height: 35px;
     background-color:#2f4c99;
     color:#fff;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 5px;
     border:solid 1px #4469c9;
     
@@ -92,10 +128,12 @@ h2{
      width:5%;
      height:15px;
      background-color: #eee;
+     display: inline-block;
 } 
 #iti{
+    color: #fff;
     float: right;
-    margin-right: 128px;
+    margin-right: 90px;
     margin-top: 3px
 } 
 #submit{
@@ -118,4 +156,26 @@ h2{
     margin-left: auto;
     margin-right: auto; 
     
-}          
+} 
+label{
+    color: white;
+}   
+@media (max-width: 40em) {
+
+.panel-body{
+width:100%;
+margin-left:auto;
+}
+#date{
+    font-size: 20px;
+}
+#heure{
+    font-size: 20px;
+}
+#iti{
+    margin-right: 313px;
+}
+.container-fluid[_ngcontent-c3] a[_ngcontent-c3]{
+    margin-top: 30px;
+}
+}      
