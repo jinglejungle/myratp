@@ -1,0 +1,18 @@
+.trafic { 
+    height: 300px;
+    width: 600px;
+    background: #fff;
+    margin: 5% auto;
+    padding: 5%;
+    border-radius: 2px;
+}
+
+.titre {
+    font-size: 16px;
+}
+
+.rer-liste li,
+.metro-liste li,
+.tramway-liste li  {
+    float: left;
+}

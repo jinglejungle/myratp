@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import {SelectModule} from 'ng2-select';
+import { SelectModule } from 'ng2-select';
 import { AgmCoreModule } from 'angular2-google-maps/core';
 
 /*import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations.d';*/
@@ -18,8 +18,11 @@ import { RechercheComponent } from './ligne/recherche/recherche.component';
 import { LigneMapComponent } from './ligne/ligne-map/ligne-map.component';
 import { LigneHorairesComponent } from './ligne/ligne-horaires/ligne-horaires.component';
 import { ItineraireComponent } from './itineraire/itineraire.component';
+import { TraficComponent } from './ligne/trafic/trafic.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { FormItiComponent } from './form-iti/form-iti.component';
+import { AlertModule} from 'ngx-bootstrap';
+import { DatepickerModule } from 'ngx-bootstrap' ;
 
 
 @NgModule({
@@ -33,14 +36,18 @@ import { FormItiComponent } from './form-iti/form-iti.component';
     LigneMapComponent,
     LigneHorairesComponent,
     ItineraireComponent,
+    TraficComponent,
     AccueilComponent,
-    FormItiComponent
-  ],
+    FormItiComponent],
+  
   imports: [
+    DatepickerModule.forRoot(),
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
+    AlertModule.forRoot(),
+    
     AppRoutingModule,
     SelectModule,
     AgmCoreModule.forRoot({
