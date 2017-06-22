@@ -6,24 +6,108 @@
     border-radius: 2px;
 }
 
-.titre { font-size: 16px; }
+.titre-info { 
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
 
 .logo-rer,
 .logo-tram,
-.logo-metro { display: inline-block; }
-
-.trafic ul { display: block; }
-
-.titre-trafic {
-    color: #050D9E;
-    font-size: 11px;
-    font-weight: bolder;
-    border-radius: 50%;
-    border: 2px solid #050D9E;
-    width: 30px;
-    height: 30px;
+.logo-metro { 
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: solid #F1F0F0 1.5px;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
 }
 
-/*.titre-trafic span { margin: 10px auto; }
-#titre-metro { padding: 0.3em; }
-#titre-tram { padding: 0.3em; }*/
+.titre-trafic { 
+    float: left;
+    margin-right: 4%;
+    margin-top: -4px;
+    margin-bottom: 5px;
+}
+
+.liste-rer,
+.liste-metro,
+.liste-tram { display: inline-block; }
+
+.btn-trafic {
+    background: #0062A1;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 2%;
+}
+
+/* Logos RER, M et T */
+.titre-metro,
+.titre-rer,
+.titre-tram {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #050D9E;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 12px;
+    font-weight: bolder;
+    color: #050D9E;
+}
+
+/* Rond des logos de lignes */
+.cartouche { 
+    display: inline-block;
+    margin-top: 4px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+}
+
+/* Centrage des logos avec contours sur fond blanc */
+.centrage-2 { line-height: 23px; }
+
+/* Couleurs des lignes de RER */
+.rer-a {  border: 2px solid #E2231A; color: #E2231A; }
+.rer-b {  border: 2px solid #7BA3DC; color: #7BA3DC; }
+
+/* Couleurs des lignes de Métro */
+.ligne-1 { background: #FFCD00; color: #222; }
+.ligne-2 { background: #003CA6; color: #fff; }
+.ligne-3 { background: #837902; color: #fff; }
+.ligne-4 { background: #CF009E; color: #fff; }
+.ligne-5 { background: #FF7E2E; color: #222; }
+.ligne-6 { background: #6ECA97; color: #222; }
+.ligne-7 { background: #FA9ABA; color: #222; }
+.ligne-8 { background: #E19BDF; color: #222; }
+.ligne-9 { background: #B6BD00; color: #222; }
+.ligne-10 { background: #C9910D; color:#222; }
+.ligne-11 { background: #704B1C; color: #fff; }
+.ligne-12 { background: #007852; color: #fff; }
+.ligne-13 { background: #6EC4E8; color: #222; }
+.ligne-14 { background: #62259D; color: #fff; }
+
+/* Couleurs des lignes de Tramway */
+.t-1 { border: 2px solid #003CA6; color: #003CA6; }
+.t-2 { border: 2px solid #62259D; color: #62259D; }
+.t-3 { border: 2px solid #CF009E; color: #CF009E; }
+.t-4 { border: 2px solid #FF7E2E; color: #FF7E2E; }
+.t-5 { border: 2px solid #00AE41; color: #00AE41; }
+.t-6 { border: 2px solid #62259D; color: #62259D; }
+.t-7 { border: 2px solid #704B1C; color: #704B1C; }
+.t-8 { border: 2px solid #837902; color: #837902; }
+
+/* S */
+@media ( max-width: 80em ) {
+    .trafic { 
+        width: 90%;
+    }
+}
