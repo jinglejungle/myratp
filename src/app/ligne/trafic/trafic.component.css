@@ -1,5 +1,4 @@
 .trafic { 
-    height: 300px;
     width: 600px;
     background: #fff;
     margin: 5% auto;
@@ -7,12 +6,24 @@
     border-radius: 2px;
 }
 
-.titre {
-    font-size: 16px;
+.titre { font-size: 16px; }
+
+.logo-rer,
+.logo-tram,
+.logo-metro { display: inline-block; }
+
+.trafic ul { display: block; }
+
+.titre-trafic {
+    color: #050D9E;
+    font-size: 11px;
+    font-weight: bolder;
+    border-radius: 50%;
+    border: 2px solid #050D9E;
+    width: 30px;
+    height: 30px;
 }
 
-.rer-liste li,
-.metro-liste li,
-.tramway-liste li  {
-    float: left;
-}
+/*.titre-trafic span { margin: 10px auto; }
+#titre-metro { padding: 0.3em; }
+#titre-tram { padding: 0.3em; }*/

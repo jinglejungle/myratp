@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trafic.component.css']
 })
 export class TraficComponent implements OnInit {
+  
+  heure: string = "";
 
   constructor() { }
 
   ngOnInit() {
+
+     /*this.heure = Date.getHours() ;*/
+   
   }
 
 }
