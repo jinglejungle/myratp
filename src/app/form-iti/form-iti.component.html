@@ -1,12 +1,91 @@
 <div class="panel-body">
   <form [formGroup]="form"(ngSubmit)="createItineaire()">
-    <div class="form group col-sm-6">
-      <label for="title">titre</label>
+    
+      <h2>Où allons nous ?</h2>
+      <label for="depart" id="depart">DE</label>
       <input type="text"
              name="title"
              class="form-control"
+             placeholder="Lieu, stations, adresse"
+             formeControlName="depart">
+             <br/>
+      <label for="arrive" id="arrive"arrive>A</label>
+      <input type="text"
+             name="title"
+             class="form-control"
+             placeholder="Lieu, stations, adresse"
+             formeControlName="arrive">
+      <label for="aller"id="aller">Depart</label>
+      <label for="retour"id="retour">Arrivée</label> 
+      <input type="date"
+             id="date" 
+             name="date"
+             class="form-control"
+             placeholder="date"
+             formeControlName="date">
+       <label for="et">à</label>      
+      <select id="heure">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>         
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>         
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+      </select>
+      
+      <select id="minutes">
+        <option value="00">00</option>
+        <option value="05">05</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>         
+        <option value="30">30</option>
+        <option value="35">35</option>
+        <option value="40">40</option>
+        <option value="45">45</option>
+        <option value="50">50</option>
+        <option value="55">55</option>
+      </select>
+      <br/>
+      <label for="handi">&</label>
+      <input type="checkbox"
+             id="handi" 
+             name="handi"
+             class="form-control"
              placeholder=""
-             formeControlName="title">
-    </div>
+             formeControlName="handicape">
+      <p id="iti">Itineraire accessibles</p>       
+      <input type="submit"
+             id="submit" 
+             name="submit"
+             class="form-control"
+             value="C'est parti"
+             formeControlName="submit">
+      <input type="reset"
+             id="reset" 
+             name="reset"
+             class="form-control"
+             value="Réinitialiser"
+             formeControlName="reset">         
+   
   </form>
 </div>

@@ -1,3 +1,19 @@
 #traduction{
     border:0px solid #000000;
 }
+
+.navbar-nav li a, a:hover {
+  font-family: "Parisine", "Gill Sans", "Gill Sans MT", 'Calibri', sans-serif !important;
+  color:#000000 !important;
+  font-size:1.4em;
+}
+#brand{
+    float:left;
+    margin:5px;
+}
+#accroche{
+  width:10em;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size:1.5em;
+  color:#3FBEAE;
+}
