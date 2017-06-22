@@ -21,11 +21,10 @@
         </select>
         </div>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="horaires">{{ 'HOME.MENU1' | translate }}</a></li>
-          <li><a href="itineraire">{{ 'HOME.MENU2' | translate }}</a></li>
-          <li><a href="">{{ 'HOME.MENU3' | translate }}</a></li>
-          <li><a href="">{{ 'HOME.MENU4' | translate }}</a></li>
-
+          <li><a [routerLink]="['itineraire/bus/87']" >{{ 'HOME.MENU1' | translate }}</a></li>
+          <li><a [routerLink]="['horaires/bus/87']" >{{ 'HOME.MENU2' | translate }}</a></li>
+          <li><a [routerLink]="['plans']" >{{ 'HOME.MENU3' | translate }}</a></li>
+          <li><a [routerLink]="['visite-a-paris']" >{{ 'HOME.MENU4' | translate }}</a></li>
         </ul>
       </div>
     </div>

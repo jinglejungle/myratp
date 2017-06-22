@@ -27,6 +27,8 @@ import { DatepickerModule } from 'ngx-bootstrap' ;
 //modules required for traduction
 import { TranslateModule, TranslateLoader }  from '@ngx-translate/core' ;
 import { TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { PlansComponent } from './plans/plans.component';
+import { VisiteAparisComponent } from './visite-aparis/visite-aparis.component';
 
 
 // modules traduction requires an exported function for factories
@@ -47,7 +49,9 @@ export function HttpLoaderFactory(http: Http) {
     ItineraireComponent,
     TraficComponent,
     AccueilComponent,
-    FormItiComponent],
+    FormItiComponent,
+    PlansComponent,
+    VisiteAparisComponent],
   
   imports: [
     DatepickerModule.forRoot(),

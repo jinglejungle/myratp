@@ -1,8 +1,8 @@
 .app-recherche {
   position: relative;
   display:inline-block;
-  width: 650px;
-  padding: 20px;
+  width:20em;
+  padding:1.2em;
   vertical-align: top;
   border: 1px solid #13547a;
   border-radius: 4px;
