@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Line} from '../line';
+import { Line } from '../line';
 
 @Component({
   selector: 'app-ligne-horaires',

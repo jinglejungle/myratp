@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Headers, Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
-import {Observable} from "rxjs/Observable";
+import { Observable } from "rxjs/Observable";
 
 
 @Injectable()
@@ -80,5 +80,25 @@ export class ApiBusService {
       });
   }
 
+
+  /*
+   * Function getTraffic
+   *
+   * Affiche l'information trafic ( ex: tramways, metros, rers)
+   *
+   */
+
+  getTraffic(): Observable<any> {
+
+    let url=`https://api-ratp.pierre-grimaud.fr/v3/traffic`;
+
+    return this.http.get(url)
+      .map(data => {
+        data.json();
+        console.log("DATA HERE: ", data.json());
+        return data.json();
+      });
+
+  }
 
 }

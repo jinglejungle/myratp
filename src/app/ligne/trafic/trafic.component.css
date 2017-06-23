@@ -2,15 +2,25 @@
     width: 600px;
     background: #fff;
     margin: 5% auto;
-    padding: 5%;
+    padding: 3% 10% 6% 10%;
     border-radius: 2px;
+    border-top: #d9d9d9 15px solid;
+}
+
+.btn-load {
+    background: none;
+    color: #ccc;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-right: 2%;
 }
 
 .titre-info { 
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    margin-bottom: 3%;
 }
 
 .logo-rer,
@@ -39,11 +49,21 @@
 .liste-metro,
 .liste-tram { display: inline-block; }
 
+.liste-rer li,
+.liste-metro li,
+.liste-tram { margin-right: 5px; }
+
+.btn-pop {
+    background: none;
+    padding: 0;
+}
+
 .btn-trafic {
     background: #0062A1;
     color: #fff;
     font-size: 16px;
     margin-top: 2%;
+    padding: 3% 4% 3% 3%;
 }
 
 /* Logos RER, M et T */
@@ -51,13 +71,13 @@
 .titre-rer,
 .titre-tram {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     border: 2px solid #050D9E;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;  
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bolder;
     color: #050D9E;
 }
@@ -76,8 +96,11 @@
 .centrage-2 { line-height: 23px; }
 
 /* Couleurs des lignes de RER */
-.rer-a {  border: 2px solid #E2231A; color: #E2231A; }
-.rer-b {  border: 2px solid #7BA3DC; color: #7BA3DC; }
+.rer-A {  border: 2px solid #E2231A; color: #E2231A; text-transform: uppercase; }
+.rer-B {  border: 2px solid #7BA3DC; color: #7BA3DC; text-transform: uppercase; }
+.rer-c {  border: 2px solid #C9910D; color: #C9910D; text-transform: uppercase; }
+.rer-d {  border: 2px solid #00AE41; color: #00AE41; text-transform: uppercase; }
+.rer-e {  border: 2px solid #E37ED1; color: #E37ED1; text-transform: uppercase; }
 
 /* Couleurs des lignes de Métro */
 .ligne-1 { background: #FFCD00; color: #222; }
@@ -94,6 +117,9 @@
 .ligne-12 { background: #007852; color: #fff; }
 .ligne-13 { background: #6EC4E8; color: #222; }
 .ligne-14 { background: #62259D; color: #fff; }
+.ligne-3B { background: #6EC4E8; color: #222; text-transform: lowercase; }
+.ligne-7B { background: #6ECA97; color: #222; text-transform: lowercase; }
+
 
 /* Couleurs des lignes de Tramway */
 .t-1 { border: 2px solid #003CA6; color: #003CA6; }
@@ -104,6 +130,8 @@
 .t-6 { border: 2px solid #62259D; color: #62259D; }
 .t-7 { border: 2px solid #704B1C; color: #704B1C; }
 .t-8 { border: 2px solid #837902; color: #837902; }
+.t-3A { border: 2px solid #FF7E2E; color: #FF7E2E; text-transform: lowercase; }
+.t-3B { border: 2px solid #00AE41; color: #00AE41; text-transform: lowercase; }
 
 /* S */
 @media ( max-width: 80em ) {

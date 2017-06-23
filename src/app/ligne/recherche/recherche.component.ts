@@ -1,8 +1,8 @@
 import {Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Line} from '../line';
-import { ApiBusService } from '../../apiRatp.service'
+import { Line } from '../line';
+import { ApiBusService } from '../../apiRatp.service';
 import 'rxjs/add/observable/of';
-import { Observable }        from 'rxjs/Observable';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-recherche',
@@ -11,7 +11,6 @@ import { Observable }        from 'rxjs/Observable';
 })
 
 export class RechercheComponent implements OnInit {
-
 
   @Output() eventSearch: EventEmitter<any> = new EventEmitter();
 

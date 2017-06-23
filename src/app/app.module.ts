@@ -21,9 +21,7 @@ import { ItineraireComponent } from './itineraire/itineraire.component';
 import { TraficComponent } from './ligne/trafic/trafic.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { FormItiComponent } from './form-iti/form-iti.component';
-import { AlertModule} from 'ngx-bootstrap';
-import { DatepickerModule } from 'ngx-bootstrap' ;
-import { BsDropdownModule } from 'ngx-bootstrap';
+import { AlertModule, DatepickerModule, PopoverModule, BsDropdownModule } from 'ngx-bootstrap';
 
 //modules required for traduction
 import { TranslateModule, TranslateLoader }  from '@ngx-translate/core' ;
@@ -32,7 +30,6 @@ import { PlansComponent } from './plans/plans.component';
 import { VisiteAparisComponent } from './visite-aparis/visite-aparis.component';
 import { SocialNetworkComponent } from './social-network/social-network.component';
 import { SearchComponent } from './search/search.component';
-
 
 // modules traduction requires an exported function for factories
 export function HttpLoaderFactory(http: Http) {
@@ -66,6 +63,7 @@ export function HttpLoaderFactory(http: Http) {
     ReactiveFormsModule,
     HttpModule,
     AlertModule.forRoot(),
+    PopoverModule.forRoot(),
     TranslateModule.forRoot(),
     AppRoutingModule,
     SelectModule,

@@ -1,68 +1,98 @@
-<div class="trafic">
+<div class="trafic container"> <!-- tester grid bootstrap 
+https://v4-alpha.getbootstrap.com/layout/grid/#variable-width-content -->
 
-  <h3 class="titre-info">Information trafic à 
-    <span id="heure-info">00:00 {{heure}}</span>
-  </h3>
+	<div class="row" *ngIf="trafic!==undefined">
+		<!-- Résoud le pb d'affichage pour le premier élément -->
 
-    <div class="rer">
+		<h3 class="titre-info">
+			<button type="button" class="btn btn-load" (click)="onClick($event)">
+				<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+			</button>
+			Information trafic à &nbsp;<span id="heure-info">00:00</span>
+		</h3>
 
-      <div class="titre-trafic">
-        <span class="titre-rer centrage-2">RER</span>
-      </div>
-      
-      <ul class="liste-rer">
-        <li class="logo-rer"><span class="rer-a cartouche centrage-2">A</span></li>
-        <li class="logo-rer"><span class="rer-b cartouche centrage-2">B</span></li>
-      </ul>  <!-- #liste-rer -->
+		<div class="rer" >
+			<div class="titre-trafic">
+				<span class="titre-rer centrage-2">RER</span>
+			</div>
 
-    </div> <!-- rer -->
+			<!-- Popover ngx-bootstrap + appel API https://api-ratp.pierre-grimaud.fr/v3 -->
+			<ul class="liste-rer" *ngFor="let rer of trafic.rers">
+				<li>
+					<button type="button" 
+							class="btn btn-pop logo-rer" 
+							popover="{{rer.message}}"
+							triggers="mouseenter:mouseleave"
+							placement="top">
+						<span class="rer-{{rer.line}} cartouche centrage-2">{{rer.line}}</span>
+					</button>
+				</li>
+			</ul> <!-- #liste-rer -->
+		</div> <!-- rer -->
+
+		<div class="metro">
+			<div class="titre-trafic">
+				<span class="titre-metro centrage-2">M</span>
+			</div>
+
+			<ul class="liste-metro" *ngFor="let metro of trafic.metros">
+				<li>
+					<button type="button" 
+							class="btn btn-pop logo-metro" 
+							popover="{{metro.message}}"
+							triggers="mouseenter:mouseleave"
+							placement="top">
+						<span class="ligne-{{metro.line}} cartouche">{{metro.line}}</span>
+					</button>
+				</li>
+			</ul>
+		</div> <!-- .metro -->
+	
+		<div class="tram">
+			<div class="titre-trafic">
+				<span class="titre-tram centrage-2">T</span>
+			</div>
+
+			<ul class="liste-tram" *ngFor="let tram of trafic.tramways">
+				<li>
+					<button type="button" 
+							class="btn btn-pop logo-tram" 
+							popover="{{tram.message}}"
+							triggers="mouseenter:mouseleave"
+							placement="top">
+						<span class="t-{{tram.line}} cartouche centrage-2">{{tram.line}}</span>
+					</button>
+				</li>
+			</ul> <!-- .liste-tram -->
+		</div> <!-- .tram -->
+
+		<button type="button" class="btn btn-trafic" (click)="onClick($event)">
+			<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>&nbsp; En savoir plus sur l'info trafic
+		</button>
+
+	</div> <!-- .row -->
+</div><!-- .trafic .container -->
 
 
-    <div class="metro">
+<!-- *ngIf message = travaux afficher panneau ou si probleme entourer en rouge -->
+<!-- placement alternatif: left, top, bottom, left, right -->
 
-      <div class="titre-trafic">
-        <span class="titre-metro centrage-2">M</span>
-      </div>
+<!--
+		if ( rer.title || tram.title || metro.title === "Travaux" ) {
+			affichage de 	.glyphicon-warning-sign
+							.glyphicon-alert
+							.fa-wrench
+		}
 
-      <ul class="liste-metro">
-        <li class="logo-metro"><span class="ligne-1 cartouche">1</span></li>
-        <li class="logo-metro"><span class="ligne-2 cartouche">2</span></li>
-        <li class="logo-metro"><span class="ligne-3 cartouche">3</span></li>
-        <li class="logo-metro"><span class="ligne-4 cartouche">4</span></li>
-        <li class="logo-metro"><span class="ligne-5 cartouche">5</span></li>
-        <li class="logo-metro"><span class="ligne-6 cartouche">6</span></li>
-        <li class="logo-metro"><span class="ligne-7 cartouche">7</span></li>
-        <li class="logo-metro"><span class="ligne-8 cartouche">8</span></li>
-        <li class="logo-metro"><span class="ligne-9 cartouche">9</span></li>
-        <li class="logo-metro"><span class="ligne-10 cartouche">10</span></li>
-        <li class="logo-metro"><span class="ligne-11 cartouche">11</span></li>
-        <li class="logo-metro"><span class="ligne-12 cartouche">12</span></li>
-        <li class="logo-metro"><span class="ligne-13 cartouche">13</span></li>
-        <li class="logo-metro"><span class="ligne-14 cartouche">14</span></li>
-      </ul> <!-- #liste-metro -->
+		.glyphicon-flash
+		.fa-bolt
 
-    </div> <!-- .metro -->
+		if ralentissement ->
+		.fa-clock-o
 
+		if ( rer.title || tram.title || metro.title === "Trafic normal" ) {
+			.glyphicon-thumbs-up
+		}
 
-    <div class="tram">
-
-      <div class="titre-trafic"><span class="titre-tram centrage-2">T</span></div>
-
-      <ul class="liste-tram">
-        <li class="logo-tram"><span class="t-1 cartouche centrage-2">1</span></li>
-        <li class="logo-tram"><span class="t-2 cartouche centrage-2">2</span></li>
-        <li class="logo-tram"><span class="t-3 cartouche centrage-2">3</span></li>
-        <li class="logo-tram"><span class="t-4 cartouche centrage-2">4</span></li>
-        <li class="logo-tram"><span class="t-5 cartouche centrage-2">5</span></li>
-        <li class="logo-tram"><span class="t-6 cartouche centrage-2">6</span></li>
-        <li class="logo-tram"><span class="t-7 cartouche centrage-2">7</span></li>
-        <li class="logo-tram"><span class="t-8 cartouche centrage-2">8</span></li>
-      </ul> <!-- #liste-tram -->
-
-  </div> <!-- tram -->
-
-  <button type="button" class="btn btn-trafic" (click)="onClick($event)">
-    En savoir plus sur l'info trafic
-  </button>
-
-</div>
+		.glyphicon-option-horizontal -> plus d'infos
+-->
