@@ -23,12 +23,15 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { FormItiComponent } from './form-iti/form-iti.component';
 import { AlertModule} from 'ngx-bootstrap';
 import { DatepickerModule } from 'ngx-bootstrap' ;
+import { BsDropdownModule } from 'ngx-bootstrap';
 
 //modules required for traduction
 import { TranslateModule, TranslateLoader }  from '@ngx-translate/core' ;
 import { TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { PlansComponent } from './plans/plans.component';
 import { VisiteAparisComponent } from './visite-aparis/visite-aparis.component';
+import { SocialNetworkComponent } from './social-network/social-network.component';
+import { SearchComponent } from './search/search.component';
 
 
 // modules traduction requires an exported function for factories
@@ -51,10 +54,13 @@ export function HttpLoaderFactory(http: Http) {
     AccueilComponent,
     FormItiComponent,
     PlansComponent,
-    VisiteAparisComponent],
+    VisiteAparisComponent,
+    SocialNetworkComponent,
+    SearchComponent],
   
   imports: [
     DatepickerModule.forRoot(),
+    BsDropdownModule.forRoot(),
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,

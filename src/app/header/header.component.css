@@ -1,19 +1,56 @@
 #traduction{
     border:0px solid #000000;
+    font-size:1.4em;
+    text-transform: uppercase;
 }
 
-.navbar-nav li a, a:hover {
+.navbar-nav li a, .navbar-nav li a:hover {
   font-family: "Parisine", "Gill Sans", "Gill Sans MT", 'Calibri', sans-serif !important;
   color:#000000 !important;
   font-size:1.4em;
+ 
 }
+
+
 #brand{
     float:left;
     margin:5px;
 }
+
+
 #accroche{
   width:10em;
   font-family: Impact, Charcoal, sans-serif;
   font-size:1.5em;
   color:#3FBEAE;
+}
+
+.active{
+    background-color:lightskyblue  !important;
+    color:#ffffff !important;
+}
+
+.maratp-menu a{
+margin-left:20px;
+}
+
+.maratp-menu a{
+        align-self: center;
+    color: #1B159A;
+    font-size: 1.3em;
+        font-family: "Parisine", "Gill Sans", "Gill Sans MT", 'Calibri', sans-serif;
+}
+
+.maratp-menu a::before {
+    background: url(/assets/img/login.svg) no-repeat;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    margin-right: .6em;
+    vertical-align: middle;
+    width: 20px;
+}
+
+#block-maratp{
+    display:inline-block;
 }

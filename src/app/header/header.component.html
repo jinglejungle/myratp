@@ -4,28 +4,38 @@
   <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
-     
-  
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
        
-        <div id="accroche" ><a href="#"><img id="brand" src='assets/img/logo.jpg' style='height:80px;'  > </a> {{ 'HOME.TITLE' | translate }}</div>
+        <div id="accroche" >
+          <a class="lienLogo" [routerLink]="['/']"><img id="brand" src='assets/img/logo.jpg' style='height:80px;'  ></a>{{ 'HOME.TITLE' | translate }}
+        </div>
        
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-         <div style="float:right;" ><select id="traduction" #langSelect (change)="translate.use(langSelect.value)">
-          <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
-        </select>
+      <div class="collapse navbar-collapse" id="myNavbar" >
+         <div style="float:right;" >
+            <app-social-network></app-social-network>
+           <select id="traduction" #langSelect (change)="translate.use(langSelect.value)">
+             <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+          </select>
+          <app-search></app-search>
+
+          <div id="block-maratp" class="maratp-menu">
+             <a href="http://maratp.ratp.fr/" class="">Se connecter à <em>ma</em><strong>RATP</strong></a>  
+          </div>
         </div>
-        <ul class="nav navbar-nav navbar-right">
+        <div style="clear:right;"></div>
+        <ul class="nav navbar-nav navbar-right" style="float:right">
           <li><a [routerLink]="['itineraire/bus/87']" >{{ 'HOME.MENU1' | translate }}</a></li>
           <li><a [routerLink]="['horaires/bus/87']" >{{ 'HOME.MENU2' | translate }}</a></li>
           <li><a [routerLink]="['plans']" >{{ 'HOME.MENU3' | translate }}</a></li>
           <li><a [routerLink]="['visite-a-paris']" >{{ 'HOME.MENU4' | translate }}</a></li>
         </ul>
+
+
       </div>
     </div>
   </nav>

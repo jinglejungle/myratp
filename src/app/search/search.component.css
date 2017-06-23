@@ -1,0 +1,15 @@
+input[type=search] {
+    width:30px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    background-image: url(/assets/img/searchicon.png);
+
+    background-position:right 10px center;
+    background-repeat: no-repeat;
+    padding: 2px 30px 2px 5px;
+    -webkit-transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+}

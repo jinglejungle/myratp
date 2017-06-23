@@ -8,6 +8,8 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+ public items: string[] = ['The first choice!',
+    'And another choice for you.', 'but wait! A third!'];
 
     constructor(private translate: TranslateService) {
         translate.addLangs(["en", "fr"]);
@@ -20,4 +22,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+ 
+ public onHidden(): void {
+    console.log('Dropdown is hidden');
+  }
+  public onShown(): void {
+    console.log('Dropdown is shown');
+  }
+  public isOpenChange(): void {
+    console.log('Dropdown state is changed');
+  }
 }

@@ -1,0 +1,21 @@
+ul{
+    display:inline;
+}
+
+li{
+    display:inline-block
+}
+
+.social_share_icn a {
+    display: block;
+    line-height: 1;
+    padding: 7px;
+   color:gray;
+}
+
+.social_share_icn a:hover {
+    background-color: #ededed;
+    border-radius: 5px;
+    fill: #333;
+    color: #333;
+}
