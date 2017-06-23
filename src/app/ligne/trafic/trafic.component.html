@@ -1,18 +1,18 @@
 <div class="trafic">
 
-  <h3 id="titre-info">Information trafic à 
+  <h3 class="titre-info">Information trafic à 
     <span id="heure-info">00:00 {{heure}}</span>
   </h3>
 
     <div class="rer">
 
       <div class="titre-trafic">
-        <span id="titre-rer">RER</span>
+        <span class="titre-rer centrage-2">RER</span>
       </div>
       
-      <ul id="liste-rer">
-        <li class="logo-rer">A</li>
-        <li class="logo-rer">B</li>
+      <ul class="liste-rer">
+        <li class="logo-rer"><span class="rer-a cartouche centrage-2">A</span></li>
+        <li class="logo-rer"><span class="rer-b cartouche centrage-2">B</span></li>
       </ul>  <!-- #liste-rer -->
 
     </div> <!-- rer -->
@@ -21,24 +21,24 @@
     <div class="metro">
 
       <div class="titre-trafic">
-        <span id="titre-metro">M</span>
+        <span class="titre-metro centrage-2">M</span>
       </div>
 
-      <ul id="liste-metro">
-        <li class="logo-metro">1</li>
-        <li class="logo-metro">2</li>
-        <li class="logo-metro">3</li>
-        <li class="logo-metro">4</li>
-        <li class="logo-metro">5</li>
-        <li class="logo-metro">6</li>
-        <li class="logo-metro">7</li>
-        <li class="logo-metro">8</li>
-        <li class="logo-metro">9</li>
-        <li class="logo-metro">10</li>
-        <li class="logo-metro">11</li>
-        <li class="logo-metro">12</li>
-        <li class="logo-metro">13</li>
-        <li class="logo-metro">14</li>
+      <ul class="liste-metro">
+        <li class="logo-metro"><span class="ligne-1 cartouche">1</span></li>
+        <li class="logo-metro"><span class="ligne-2 cartouche">2</span></li>
+        <li class="logo-metro"><span class="ligne-3 cartouche">3</span></li>
+        <li class="logo-metro"><span class="ligne-4 cartouche">4</span></li>
+        <li class="logo-metro"><span class="ligne-5 cartouche">5</span></li>
+        <li class="logo-metro"><span class="ligne-6 cartouche">6</span></li>
+        <li class="logo-metro"><span class="ligne-7 cartouche">7</span></li>
+        <li class="logo-metro"><span class="ligne-8 cartouche">8</span></li>
+        <li class="logo-metro"><span class="ligne-9 cartouche">9</span></li>
+        <li class="logo-metro"><span class="ligne-10 cartouche">10</span></li>
+        <li class="logo-metro"><span class="ligne-11 cartouche">11</span></li>
+        <li class="logo-metro"><span class="ligne-12 cartouche">12</span></li>
+        <li class="logo-metro"><span class="ligne-13 cartouche">13</span></li>
+        <li class="logo-metro"><span class="ligne-14 cartouche">14</span></li>
       </ul> <!-- #liste-metro -->
 
     </div> <!-- .metro -->
@@ -46,19 +46,23 @@
 
     <div class="tram">
 
-      <div class="titre-trafic"><span id="titre-tram">T</span></div>
+      <div class="titre-trafic"><span class="titre-tram centrage-2">T</span></div>
 
-      <ul id="liste-tram">
-        <li class="logo-tram">1</li>
-        <li class="logo-tram">2</li>
-        <li class="logo-tram">3<span>a</span></li>
-        <li class="logo-tram">3<span>b</span></li>
-        <li class="logo-tram">5</li>
-        <li class="logo-tram">6</li>
-        <li class="logo-tram">7</li>
-        <li class="logo-tram">8</li>
+      <ul class="liste-tram">
+        <li class="logo-tram"><span class="t-1 cartouche centrage-2">1</span></li>
+        <li class="logo-tram"><span class="t-2 cartouche centrage-2">2</span></li>
+        <li class="logo-tram"><span class="t-3 cartouche centrage-2">3</span></li>
+        <li class="logo-tram"><span class="t-4 cartouche centrage-2">4</span></li>
+        <li class="logo-tram"><span class="t-5 cartouche centrage-2">5</span></li>
+        <li class="logo-tram"><span class="t-6 cartouche centrage-2">6</span></li>
+        <li class="logo-tram"><span class="t-7 cartouche centrage-2">7</span></li>
+        <li class="logo-tram"><span class="t-8 cartouche centrage-2">8</span></li>
       </ul> <!-- #liste-tram -->
 
   </div> <!-- tram -->
+
+  <button type="button" class="btn btn-trafic" (click)="onClick($event)">
+    En savoir plus sur l'info trafic
+  </button>
 
 </div>

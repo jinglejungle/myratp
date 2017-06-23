@@ -4,25 +4,46 @@
       <h2>Où allons nous ?</h2>
       <label for="depart" id="depart">DE</label>
       <input type="text"
+             id="depart2" 
              name="title"
              class="form-control"
              placeholder="Lieu, stations, adresse"
              formeControlName="depart">
              <br/>
+              
+             <div class="clear"></div>
       <label for="arrive" id="arrive"arrive>A</label>
       <input type="text"
+             id="arrive2" 
              name="title"
              class="form-control"
              placeholder="Lieu, stations, adresse"
              formeControlName="arrive">
-      <label for="aller"id="aller">Depart</label>
-      <label for="retour"id="retour">Arrivée</label> 
+              <div class="clear"></div>
+              
+       <input type="button"
+              value="depart"
+              id="aller"
+              name="aller"
+             class="form-control"
+             formeControlName="aller">
+       <input type="button"
+              value="retour"
+              id="retour"
+              name="retour"
+             class="form-control"
+             formeControlName="retour">
+             <br/>
+             <br/>
+      <img src="/assets/img/calendar-icon_34471.png" height="18px"/>
+
       <input type="date"
              id="date" 
              name="date"
              class="form-control"
              placeholder="date"
              formeControlName="date">
+
        <label for="et">à</label>      
       <select id="heure">
         <option value="0">0</option>
@@ -66,7 +87,7 @@
         <option value="55">55</option>
       </select>
       <br/>
-      <label for="handi">&</label>
+      <label for="handi"> <img src="/assets/img/chaise-roulante_318-130814.jpg" height="15px"/></label>
       <input type="checkbox"
              id="handi" 
              name="handi"
@@ -88,4 +109,9 @@
              formeControlName="reset">         
    
   </form>
+  <div class="metro">
+
+
+  </div>
+
 </div>
